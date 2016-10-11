@@ -32,22 +32,7 @@ let lecture f =
 	let b = input_line f in
 	(a,b);;
 
-let jam1 (a,b) =
-	let ioto10 c = if (c = 'O') then '0' else '1' in
-	let exclu10 s = String.map ioto10 s in
-	let l = String.length (exclu10 b) in
-  let li = [] in
-  let ajoutFin l a = l @[a] in
-  let oper li s i = ajoutFin li (String.sub s i 8) in
-  let lis li s i= ajoutFin li (String.sub s i 8) in
-	let (*rec*) decoupe s i li =
-		(*if i = (l-1) then li
-    else decoupe s (i+8) (lis li s i)*)
-    ajoutFin li (String.sub s i 8
-	in
-  String.concat " " (decoupe (exclu10 b) 0 li)
-	;;
-
+let jam2 (a,b) =
 
 (* Exemple d'utilisation *)
 (* jam "A-small-practice.in" "toto.out" lecture jam1;;*)
