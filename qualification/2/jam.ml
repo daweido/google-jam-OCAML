@@ -32,7 +32,19 @@ let lecture f =
 	let b = input_line f in
 	(a,b);;
 
+#load "str.cma";;
+
 let jam2 (a,b) =
+	let ssli s = Str.split (Str.regexp " ") s in
+	let rec supp l n =
+		match l with
+			[] -> []
+			|x::r -> if x = n then r
+					else x::(supp r n) in
+	let ssliInt l = List.map int_of_string l in
+	let verifReduc x l = 
+
+
 
 (* Exemple d'utilisation *)
 (* jam "A-small-practice.in" "toto.out" lecture jam1;;*)
