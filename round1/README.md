@@ -1,1 +1,3 @@
-1.ml : Minimum Scalar Product : 5pts
+1. *Minimum Scalar Product : 5pts* **OK**
+
+**TOTAL : **

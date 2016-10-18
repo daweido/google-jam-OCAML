@@ -42,9 +42,17 @@ let jam2 (a,b) =
 			|x::r -> if x = n then r
 					else x::(supp r n) in
 	let ssliInt l = List.map int_of_string l in
-	let verifReduc x l = 
+	let rec ajouteFin l a = match l with
+		[] -> [a]
+		|x::r -> x::ajouteFin r a in
+	let rec recupVal l = match l with
+		[] -> []
+		|x::r -> x::recupVal (supp r ((x*4)/3)) in
+	let sortieString l = String.concat " " (List.map string_of_int l) in
+	sortieString (recupVal (ssliInt (ssli b)));;
+
 
 
 
 (* Exemple d'utilisation *)
-(* jam "A-small-practice.in" "toto.out" lecture jam1;;*)
+(* jam "A-large-practice.in" "toto.out" lecture jam2;;*)

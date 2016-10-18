@@ -1,2 +1,4 @@
-1.ml : Number Game L : 25pts
-2.ml : A Rope Intranet S : 9pts
+1. *Number Game L : 25pts* **OK**
+2. *A Rope Intranet S : 9pts* **OK**
+
+**TOTAL : 34pts**
