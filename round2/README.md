@@ -1,4 +1,4 @@
-1. *Number Game L : 25pts* **OK**
-2. *A Rope Intranet S : 9pts* **OK**
+1. *NumberGame L : 25pts* **OK**
+4. *Box Factory S : 12pts* **OK**
 
-**TOTAL : 34pts**
+**TOTAL : 37pts**

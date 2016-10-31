@@ -31,6 +31,7 @@ let lecture f =
 	let a = input_line f in
 	a;;
 #load "str.cma";;
+
 let jam3 a =
 	let ssli s = Str.split (Str.regexp " ") s in
 	let sortieParam l = match l with
