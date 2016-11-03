@@ -48,7 +48,6 @@ let jam1 (a,b) =
 	let ajoutChar cl = String.concat "" (List.map (String.make 1) cl) in
 
 	ajoutChar (mapChar (mappe (hohi (decoupe (exclu10 b)))))
-  (*String.concat " " (decoupe (exclu10 b))*)
 	;;
 
 

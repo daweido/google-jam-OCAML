@@ -1,4 +1,2 @@
-1. *Minimum Scalar Product SMALL : 5pts*
-2. *Square Fields LARGE : 25pts*
-
-**TOTAL : **
+1. *Egg Drop S L : 40/80pts* **OK**
+**TOTAL : 40/80pts**
