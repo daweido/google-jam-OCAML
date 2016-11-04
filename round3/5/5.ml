@@ -34,17 +34,17 @@ let lecture f =
 
 let rec jamLoop n fich i  lb la =
 	(*ici mettre les fonctions d'Olivier*)
-	let ligne = input_line fich
+	let ligne = input_line fich in
 	if i = n then
 		if la = [] then "GOOD" else "BAD"
 	(*remplacer lb et la par les fonctions d'olivier, les appeller*)
-	else jamLoop n fich i+1 lb la;;
+	else jamLoop n fich (i+1) lb la;;
 
 let jamEval a =
 	let lb = [] in
 	let la = [] in
-	let fich = "C-small-practice.in" in
-	let n = string_of_int (input_line fich) in
+	let fich = open_in "C-small-practice.in" in
+	let n = int_of_string (input_line fich) in
 	jamLoop n fich 0 lb la;;
 
 
