@@ -33,7 +33,9 @@ let lecture f =
 	a;;
 
 let rec jamLoop n fich i  lb la =
-	(*ici mettre les fonctions d'Olivier*)
+	let lecDavid s = match s with
+		s when String.sub s (String.length s - 3) 3 = "=()" -> String.sub s 0 (String.length s - 3)
+		|_ -> s in
 	let ligne = input_line fich in
 	if i = n then
 		if la = [] then "GOOD" else "BAD"

@@ -11,10 +11,7 @@ let separe s = Str.split (Str.regexp "") s;;
 let l = ['z';'a';'(';')';];;
 let b = ['a';'b';'c'];;
 
-let lecDavid l = match l with
-	[] -> failwith "Erreur"
-	|x::f when f = ["=";"(";")"] -> String.concat "" x
-	| _ -> String.concat "" l;;
+
 
 let rec lec l = match l with
 	[] -> false
