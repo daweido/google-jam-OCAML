@@ -1,6 +1,25 @@
+let rec jam_rec flec algolec algopb nblignes total = match nblignes with
+ 0 -> ""
+|n -> let line = (algolec flec) in
+	"Case #"^(string_of_int(total-nblignes+1))^": "^(algopb line)^"\n"^(jam_rec flec algolec algopb (nblignes-1) total) ;;
+
+let jam fin fout algolec algopb =
+	let fecr = open_out fout in
+	let flec = open_in fin in
+	let nb = (int_of_string(input_line flec)) in
+	begin
+		output_string fecr (jam_rec flec algolec algopb nb nb);
+		close_in flec;
+		close_out fecr;
+	end;;
+
+let lecture f =
+	let a = input_line f in
+	a;;
+
 #load "str.cma" ;;
 
-let separe s = List.map int_of_string(Str.split (Str.regexp " ") s) 
+let separe s = List.map int_of_string(Str.split (Str.regexp " ") s);;
 
 let lisse d b = if b > d then d else b;; (* si le nombre d'oeufs cassés est supérieur au nbre de lancés cela équivaut a d = b*)
 
@@ -13,7 +32,7 @@ let sauvegarde d b =
                              |x::y::z::r -> save d b r in
                              save d b !listesauv;;
 let rec etage d b =
-	if (d >= 32) && (b >=32) then -1 else 
+	if (d >= 32) && (b >=32) then -1 else
 	if b = 1 then d else
 	if d = 1 then 1 else
 
@@ -38,7 +57,8 @@ let fin x = match x with
 	|f::d::b::[]-> string_of_int(etage d (lisse d b))^" "^string_of_int(drop f b 1)^" "^string_of_int(break f d 1)
 	|_ -> failwith "Erreur";;
 
-let resolve x = fin  (separe x);;
+let jamEgg x = fin  (separe x);;
 
 
-(*a = f*)
+(* Exemple d'utilisation *)
+(* jam "C-small-practice.in" "toto.out" lecture jamEgg;;*)

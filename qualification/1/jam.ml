@@ -1,16 +1,3 @@
-(*
- * nom : jam
- * pre-conditions : fin,fout  2 noms de fichiers
- * pre-conditions : fonction algolec (unit_channel -> `a),
- *                  qui lit le contenu d'un cas de fin,
- * pre-conditions : fonction algopp (`a -> string),
- *                  qui renvoie la solution du cas passé en paramêtre
- * post-conditions : retourne le type unit (rien) après avoir
- *                   écrit le résultat de l'exécution de l'algopb sur tous
- *                   les cas de fin dans fout
- * auteur : EISTI
- * date création : 07/10/15
- *)
 
 let rec jam_rec flec algolec algopb nblignes total = match nblignes with
  0 -> ""
