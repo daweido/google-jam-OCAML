@@ -1,12 +1,12 @@
 (Version française / French version)
 
-# Mini-Projet Tri
-Ceci est un projet fait en deuxième année du cycle préparatoire, codé en [OCaml](https://ocaml.org/). Le but de ce projet était de faire les exercices du Google Jam.
+# Google Jam
+Ceci est un projet fait en deuxième année du cycle préparatoire, codé en [OCaml](https://ocaml.org/). Le but de ce projet était de faire les exercices du [Google Jam](https://code.google.com/codejam/).
 
 (Version anglaise / English version)
 
-# Sort mini-project
-This is a project made in second year of prepatory class coded in [OCaml](https://ocaml.org/). This project aimed to do Google Jam's exercices.
+# Google Jam
+This is a project made in second year of prepatory class coded in [OCaml](https://ocaml.org/). This project aimed to do [Google Jam](https://code.google.com/codejam/)'s exercices.
 
 # License (MIT)
 Copyright 2016 David RIGAUX
